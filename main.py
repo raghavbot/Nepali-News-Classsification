@@ -13,9 +13,9 @@ st.set_page_config(
 
 st.title("📰 Nepali News Classifier")
 
-BASE_DIR = Path(__file__).parent
+BASE_DIR = Path("/home/raghav/Desktop/Nepali News Classsification")
 PIPE_PATH = BASE_DIR / "nepali_news_classifier.joblib"
-LE_PATH   = BASE_DIR / "/home/raghav/Desktop/Nepali News Classsification/nepali_news_label_encoder.joblib"
+LE_PATH   = BASE_DIR / "nepali_news_label_encoder.joblib"
 
 @st.cache_resource
 def load_artifacts():
